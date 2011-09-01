@@ -184,7 +184,7 @@ blockquote p {
 #layout_header {
 	text-align:left;
 	width:100%;
-	background-image:url('http://elgg.localhost/mod/wlug_theme/img/header_bg.png');
+	background-image:url('<?php echo $vars['url']; ?>mod/wlug_theme/img/header_bg.png');
 	background-repeat:repeat-y;
 	background-color:#7EB4C1;
 	height:93px;
@@ -193,14 +193,14 @@ blockquote p {
 	margin:0;
 	height:100%;
 	padding:11px 0 0 0;
-	background-image:url('http://elgg.localhost/mod/wlug_theme/img/penguin_head.png');
+	background-image:url('<?php echo $vars['url']; ?>mod/wlug_theme/img/penguin_head.png');
 	background-repeat:no-repeat;
 	background-position:right top;
 }
 div#header_logo {
 	width:250px;
 	height:70px;
-	background-image:url('http://elgg.localhost/mod/wlug_theme/img/logo.png');
+	background-image:url('<?php echo $vars['url']; ?>mod/wlug_theme/img/logo.png');
 	background-repeat:no-repeat;
 }
 div#header_logo a {
@@ -430,7 +430,7 @@ span.contentIntro p {
 HORIZONTAL ELGG TOPBAR
 *************************************** */
 #elgg_topbar {
-	background:#333333 url(http://elgg.localhost/_graphics/toptoolbar_background.gif) repeat-x top left;
+	background:#333333 url(<?php echo $vars['url']; ?>_graphics/toptoolbar_background.gif) repeat-x top left;
 	color:#eeeeee;
 	border-bottom:1px solid #000000;
 	min-width:998px;
@@ -494,17 +494,17 @@ HORIZONTAL ELGG TOPBAR
 	text-decoration: none;
 }
 #elgg_topbar_container_left a.privatemessages {
-	background:transparent url(http://elgg.localhost/_graphics/toolbar_messages_icon.gif) no-repeat left 2px;
+	background:transparent url(<?php echo $vars['url']; ?>_graphics/toolbar_messages_icon.gif) no-repeat left 2px;
 	padding:0 0 4px 16px;
 	margin:0 15px 0 5px;
 	cursor:pointer;
 }
 #elgg_topbar_container_left a.privatemessages:hover {
 	text-decoration: none;
-	background:transparent url(http://elgg.localhost/_graphics/toolbar_messages_icon.gif) no-repeat left -36px;
+	background:transparent url(<?php echo $vars['url']; ?>_graphics/toolbar_messages_icon.gif) no-repeat left -36px;
 }
 #elgg_topbar_container_left a.privatemessages_new {
-	background:transparent url(http://elgg.localhost/_graphics/toolbar_messages_icon.gif) no-repeat left -17px;
+	background:transparent url(<?php echo $vars['url']; ?>_graphics/toolbar_messages_icon.gif) no-repeat left -17px;
 	padding:0 0 0 18px;
 	margin:0 15px 0 5px;
 	color:white;
@@ -539,7 +539,7 @@ HORIZONTAL ELGG TOPBAR
 #elgg_topbar_container_right a {
 	color:#eeeeee;
 	margin:0 5px 0 0;
-	background:transparent url(http://elgg.localhost/_graphics/elgg_toolbar_logout.gif) no-repeat top right;
+	background:transparent url(<?php echo $vars['url']; ?>_graphics/elgg_toolbar_logout.gif) no-repeat top right;
 	padding:0 21px 0 0;
 	display:block;
 	height:20px;
@@ -1149,106 +1149,106 @@ p.user_menu_friends_of {
 	min-height:17px;
 }
 .river_user_update {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_profile.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_profile.gif) no-repeat left -1px;
 }
 .river_object_user_profileupdate {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_profile.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_profile.gif) no-repeat left -1px;
 }
 .river_object_user_profileiconupdate {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_profile.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_profile.gif) no-repeat left -1px;
 }
 .river_object_annotate {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_comment.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_comment.gif) no-repeat left -1px;
 }
 .river_object_bookmarks_create {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_bookmarks.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_bookmarks.gif) no-repeat left -1px;
 }
 .river_object_bookmarks_comment {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_comment.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_comment.gif) no-repeat left -1px;
 }
 .river_object_status_create {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_status.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_status.gif) no-repeat left -1px;
 }
 .river_object_file_create {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_files.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_files.gif) no-repeat left -1px;
 }
 .river_object_file_update {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_files.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_files.gif) no-repeat left -1px;
 }
 .river_object_file_comment {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_comment.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_comment.gif) no-repeat left -1px;
 }
 .river_object_widget_create {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_plugin.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_plugin.gif) no-repeat left -1px;
 }
 .river_object_forums_create {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_forum.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_forum.gif) no-repeat left -1px;
 }
 .river_object_forums_update {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_forum.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_forum.gif) no-repeat left -1px;
 }
 .river_object_widget_update {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_plugin.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_plugin.gif) no-repeat left -1px;
 }
 .river_object_blog_create {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_blog.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_blog.gif) no-repeat left -1px;
 }
 .river_object_blog_update {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_blog.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_blog.gif) no-repeat left -1px;
 }
 .river_object_blog_comment {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_comment.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_comment.gif) no-repeat left -1px;
 }
 .river_object_forumtopic_create {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_forum.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_forum.gif) no-repeat left -1px;
 }
 .river_user_friend {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_friends.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_friends.gif) no-repeat left -1px;
 }
 .river_object_relationship_friend_create {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_friends.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_friends.gif) no-repeat left -1px;
 }
 .river_object_relationship_member_create {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_forum.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_forum.gif) no-repeat left -1px;
 }
 .river_object_thewire_create {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_thewire.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_thewire.gif) no-repeat left -1px;
 }
 .river_group_create {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_forum.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_forum.gif) no-repeat left -1px;
 }
 .river_group_join {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_forum.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_forum.gif) no-repeat left -1px;
 }
 .river_object_groupforumtopic_annotate {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_comment.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_comment.gif) no-repeat left -1px;
 }
 .river_object_groupforumtopic_create {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_forum.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_forum.gif) no-repeat left -1px;
 }
 .river_object_sitemessage_create {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_blog.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_blog.gif) no-repeat left -1px;
 }
 .river_user_messageboard {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_comment.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_comment.gif) no-repeat left -1px;
 }
 .river_object_page_create {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_pages.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_pages.gif) no-repeat left -1px;
 }
 .river_object_page_update {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_pages.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_pages.gif) no-repeat left -1px;
 }
 .river_object_page_top_create {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_pages.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_pages.gif) no-repeat left -1px;
 }
 .river_object_page_top_update {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_pages.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_pages.gif) no-repeat left -1px;
 }
 .river_object_page_top_comment {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_comment.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_comment.gif) no-repeat left -1px;
 }
 .river_object_page_comment {
-	background: url(http://elgg.localhost/_graphics/river_icons/river_icon_comment.gif) no-repeat left -1px;
+	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_comment.gif) no-repeat left -1px;
 }
 
 /* ***************************************
@@ -1531,13 +1531,13 @@ PAGE-OWNER BLOCK
 	font-size: 90%;
 	color:#999999;
 	padding:0 0 4px 20px;
-	background: url(http://elgg.localhost/_graphics/icon_rss.gif) no-repeat left top;
+	background: url(<?php echo $vars['url']; ?>_graphics/icon_rss.gif) no-repeat left top;
 }
 #owner_block_odd_feed a {
 	font-size: 90%;
 	color:#999999;
 	padding:0 0 4px 20px;
-	background: url(http://elgg.localhost/_graphics/icon_odd.gif) no-repeat left top;
+	background: url(<?php echo $vars['url']; ?>_graphics/icon_odd.gif) no-repeat left top;
 }
 #owner_block_rss_feed a:hover,
 #owner_block_odd_feed a:hover {
@@ -1887,16 +1887,16 @@ ul#friends_collections_accordian {
 	z-index:1;
 }
 .friendsPickerNavigationL {
-	background: url("http://elgg.localhost/_graphics/friends_picker_arrows.gif") no-repeat left top;
+	background: url("<?php echo $vars['url']; ?>_graphics/friends_picker_arrows.gif") no-repeat left top;
 }
 .friendsPickerNavigationR {
-	background: url("http://elgg.localhost/_graphics/friends_picker_arrows.gif") no-repeat -60px top;
+	background: url("<?php echo $vars['url']; ?>_graphics/friends_picker_arrows.gif") no-repeat -60px top;
 }
 .friendsPickerNavigationL:hover {
-	background: url("http://elgg.localhost/_graphics/friends_picker_arrows.gif") no-repeat left -44px;
+	background: url("<?php echo $vars['url']; ?>_graphics/friends_picker_arrows.gif") no-repeat left -44px;
 }
 .friendsPickerNavigationR:hover {
-	background: url("http://elgg.localhost/_graphics/friends_picker_arrows.gif") no-repeat -60px -44px;
+	background: url("<?php echo $vars['url']; ?>_graphics/friends_picker_arrows.gif") no-repeat -60px -44px;
 }
 .friends_collections_controls a.delete_collection {
 	display:block;
@@ -1904,7 +1904,7 @@ ul#friends_collections_accordian {
 	width:14px;
 	height:14px;
 	margin:2px 3px 0 0;
-	background: url("http://elgg.localhost/_graphics/icon_customise_remove.png") no-repeat 0 0;
+	background: url("<?php echo $vars['url']; ?>_graphics/icon_customise_remove.png") no-repeat 0 0;
 }
 .friends_collections_controls a.delete_collection:hover {
 	background-position: 0 -16px;
@@ -2093,11 +2093,11 @@ a.toggle_customise_edit_panel:hover {
 	padding:4px;
 }
 #customise_editpanel img.more_info {
-	background: url(http://elgg.localhost/_graphics/icon_customise_info.gif) no-repeat top left;
+	background: url(<?php echo $vars['url']; ?>_graphics/icon_customise_info.gif) no-repeat top left;
 	cursor:pointer;
 }
 #customise_editpanel img.drag_handle {
-	background: url(http://elgg.localhost/_graphics/icon_customise_drag.gif) no-repeat top left;
+	background: url(<?php echo $vars['url']; ?>_graphics/icon_customise_drag.gif) no-repeat top left;
 	cursor:move;
 }
 #customise_editpanel img {
@@ -2214,7 +2214,7 @@ a.collapsibleboxlink {
 
 /* tag icon */
 .object_tag_string {
-	background: url(http://elgg.localhost/_graphics/icon_tag.gif) no-repeat left 2px;
+	background: url(<?php echo $vars['url']; ?>_graphics/icon_tag.gif) no-repeat left 2px;
 	padding:0 0 0 14px;
 	margin:0;
 }
@@ -2379,7 +2379,7 @@ a.toggle_editor {
 }
 
 div.ajax_loader {
-	background: white url(http://elgg.localhost/_graphics/ajax_loader.gif) no-repeat center 30px;
+	background: white url(<?php echo $vars['url']; ?>_graphics/ajax_loader.gif) no-repeat center 30px;
 	width:auto;
 	height:100px;
 	margin:0 10px 0 10px;
@@ -2487,7 +2487,7 @@ div.ajax_loader {
 }
 
 .ac_loading {
-	background: white url(http://elgg.localhost/_graphics/indicator.gif) right center no-repeat;
+	background: white url(<?php echo $vars['url']; ?>_graphics/indicator.gif) right center no-repeat;
 }
 
 .ac_odd {
@@ -2539,17 +2539,17 @@ div.ajax_loader {
 	bottom:0;
 }
 .avatar_menu_arrow {
-	background: url(http://elgg.localhost/_graphics/avatar_menu_arrows.gif) no-repeat left top;
+	background: url(<?php echo $vars['url']; ?>_graphics/avatar_menu_arrows.gif) no-repeat left top;
 	width:15px;
 	height:15px;
 }
 .avatar_menu_arrow_on {
-	background: url(http://elgg.localhost/_graphics/avatar_menu_arrows.gif) no-repeat left -16px;
+	background: url(<?php echo $vars['url']; ?>_graphics/avatar_menu_arrows.gif) no-repeat left -16px;
 	width:15px;
 	height:15px;
 }
 .avatar_menu_arrow_hover {
-	background: url(http://elgg.localhost/_graphics/avatar_menu_arrows.gif) no-repeat left -32px;
+	background: url(<?php echo $vars['url']; ?>_graphics/avatar_menu_arrows.gif) no-repeat left -32px;
 	width:15px;
 	height:15px;
 }
