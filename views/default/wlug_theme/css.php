@@ -4,6 +4,29 @@
  */
 ?>
 
+body {
+	background: #F1F1F1;
+}
+
+a {
+	color: #1d42be;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #2f6fff;
+}
+
+a:visited {
+	color: #1d42be;
+	text-decoration: none;
+}
+
+a:visited:hover {
+	color: #2f6fff;
+}
+
+
 div#layout_header {
 	background-image: url('<?php echo $vars['url']; ?>mod/wlug_theme/img/header_bg.png');
 	background-repeat: repeat-y;

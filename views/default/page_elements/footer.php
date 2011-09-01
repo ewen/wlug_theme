@@ -16,36 +16,35 @@
 <div class="clearfloat"></div>
 
 <div id="layout_footer">
-<table width="958" height="79" border="0" cellpadding="0" cellspacing="0">
-	<tr>
-		<td width="210" height="50">
-
-		</td>
-
-		<td width="748" height="50" align="right">
-		<p class="footer_toolbar_links">
-		<?php
-			echo elgg_view('footer/links');
-		?>
-		</p>
-		</td>
-	</tr>
-
-	<tr>
-		<td width="210" height="28">
-		<a href="http://www.elgg.org" target="_blank">
-		<img src="<?php echo $vars['url']; ?>_graphics/powered_by_elgg_badge_drk_bckgnd.gif" border="0" />
-		</a>
-		</td>
-
-		<td width="748" height="28" align="right">
-		<p class="footer_legal_links"><small>
+	<p class="footer_legal_links">
 		Powered by Elgg, the leading open source social networking platform
-		</small>
-		</p>
-		</td>
-	</tr>
-</table>
+	</p>
+	<p class="footer_toolbar_links">
+	<?php
+		echo elgg_view('footer/links');
+	?>
+	</p>
+	<p class="footer_powered_by_links">
+		<a href="http://www.elgg.org" target="_blank">
+			<img src="<?php echo $vars['url']; ?>_graphics/powered_by_elgg_badge_drk_bckgnd.gif" border="0" />
+		</a>
+
+		<a href="http://www.php.net" target="_blank">
+			<img src="<?php echo $vars['url']; ?>mod/wlug_theme/img/php_powered.png" border="0" />
+		</a>
+
+		<a href="http://www.mysql.com" target="_blank">
+			<img src="<?php echo $vars['url']; ?>mod/wlug_theme/img/mysql_powered.png" border="0" />
+		</a>
+
+		<a href="http://httpd.apache.org" target="_blank">
+			<img src="<?php echo $vars['url']; ?>mod/wlug_theme/img/apache_powered.png" border="0" />
+		</a>
+
+		<a href="http://en.wikipedia.org/wiki/Linux" target="_blank">
+			<img src="<?php echo $vars['url']; ?>mod/wlug_theme/img/linux_powered.png" border="0" />
+		</a>
+	</p>
 </div><!-- /#layout_footer -->
 
 <div class="clearfloat"></div>
