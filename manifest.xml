@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Ewen Cumming" />
+	<field key="version" value="1.0" />
+	<field key="description" value="A theme for the Waikato Linux User Group (WLUG)." />
+	<field key="website" value="http://elgg.wlug.org.nz/" />
+	<field key="copyright" value="(C) WLUG 2011" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2010030101" />
+</plugin_manifest>
