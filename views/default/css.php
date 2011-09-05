@@ -1,3 +1,13 @@
+<?php
+/**
+ * WLUG Elgg Default Theme
+ * core CSS file
+ *
+ * @package wlug_theme
+ *
+ * @uses $vars['url'] The site URL
+ */
+?>
 
 /* ***************************************
 	RESET BASE STYLES
@@ -248,9 +258,7 @@ div#header_logo a {
 	min-height: 360px;
 	float:left;
 	padding:0 0 5px 0;
-	border-left:2px solid #000;
-	border-right:2px solid #000;
-	border-bottom:2px solid #000;
+	border:2px solid #000;
 }
 
 
@@ -285,7 +293,7 @@ div#header_logo a {
 	padding:0 0 5px 0;
 	font-size:1.25em;
 	line-height:1.2em;
-	color:#0054A7;
+	color:#0054a7;
 }
 
 /* canvas layout: 2 column right sidebar */
@@ -405,24 +413,28 @@ span.contentIntro p {
 	FOOTER
 *************************************** */
 #layout_footer {
+	background: #fff;
 	margin:0 0 20px 0;
-	border:4px solid #BEBEBE;
+	color:#333;
 	text-align:center;
-	background-color:#EEE;
+	border:4px solid #bebebe;
+	background:#eee;
 }
-
-#layout_footer a, #layout_footer p {
-	color:#333333;
-	margin:0;
+#layout_footer a {
+	color:#333;
 }
 #layout_footer .footer_toolbar_links {
-	padding:15px 0 0 0;
+	padding:5px;
 	font-size:1.2em;
 }
 #layout_footer .footer_legal_links {
 	font-size:.9em;
 	font-weight:bold;
-	margin-top:5px;
+	margin:0;
+	padding:5px;
+}
+#layout_footer .footer_powered_by_links {
+	margin:0;
 }
 
 
@@ -663,7 +675,7 @@ SYSTEM MESSSAGES
 	z-index: 8000;
 	margin:0;
 	position:fixed;
-	top:30px;
+	top:15px;
 	width:969px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -678,7 +690,7 @@ SYSTEM MESSSAGES
 	z-index: 8000;
 	margin:0;
 	position:fixed;
-	top:30px;
+	top:15px;
 	width:969px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -732,7 +744,7 @@ COLLAPSABLE BOXES
 }
 .collapsable_box_editpanel {
 	display: none;
-	background: #a8a8a8;
+	background: #eee;
 	padding:10px 10px 5px 10px;
 	border-left: 1px solid white;
 	border-bottom: 1px solid white;
@@ -752,7 +764,7 @@ COLLAPSABLE BOXES
 	margin-top: -7px;
 }
 .collapsable_box_header a.toggle_box_edit_panel {
-	color: #4690d6;
+	color: black;
 	cursor:pointer;
 	font-size:9px;
 	text-transform: uppercase;
@@ -1846,7 +1858,7 @@ ul#friends_collections_accordian {
 	color:white !important;
 }
 .friendsPickerNavigation li a.current {
-	background: #4690D6;
+	background: #4690d6;
 	color:white !important;
 }
 .friendsPickerNavigationAll {
@@ -1865,7 +1877,7 @@ ul#friends_collections_accordian {
 	width:auto;
 }
 .friendsPickerNavigationAll a:hover {
-	background: #4690D6;
+	background: #4690d6;
 	color:white;
 }
 .friendsPickerNavigationL, .friendsPickerNavigationR {
@@ -2188,13 +2200,13 @@ a.toggle_customise_edit_panel:hover {
 
 #content_area_user_title {
 	background-color:#80B4C2;
-	border-top:2px solid black;
 	border-bottom:2px solid black;
+	padding:5px 10px;
 }
 
 #content_area_user_title h2 {
-	margin:0 0 0 8px;
-	padding:5px;
+	margin:0;
+	padding:0;
 	color:#000;
 	font-size:1.35em;
 	line-height:1.2em;
@@ -2519,281 +2531,4 @@ div.ajax_loader {
 
 .draggable {
 	cursor: move;
-}
-
-#profile_icon_wrapper {
-	float:left;
-}
-	
-.usericon {
-	position:relative;
-}
-
-.avatar_menu_button {
-	width:15px;
-	height:15px;
-	position:absolute;
-	cursor:pointer;
-	display:none;
-	right:0;
-	bottom:0;
-}
-.avatar_menu_arrow {
-	background: url(<?php echo $vars['url']; ?>_graphics/avatar_menu_arrows.gif) no-repeat left top;
-	width:15px;
-	height:15px;
-}
-.avatar_menu_arrow_on {
-	background: url(<?php echo $vars['url']; ?>_graphics/avatar_menu_arrows.gif) no-repeat left -16px;
-	width:15px;
-	height:15px;
-}
-.avatar_menu_arrow_hover {
-	background: url(<?php echo $vars['url']; ?>_graphics/avatar_menu_arrows.gif) no-repeat left -32px;
-	width:15px;
-	height:15px;
-}
-.usericon div.sub_menu { 
-	display:none; 
-	position:absolute; 
-	padding:2px; 
-	margin:0; 
-	border-top:solid 1px #E5E5E5; 
-	border-left:solid 1px #E5E5E5; 
-	border-right:solid 1px #999999; 
-	border-bottom:solid 1px #999999;  
-	width:160px; 
-	background:#FFFFFF; 
-	text-align:left;
-}
-div.usericon a.icon img {
-	z-index:10;
-}
-
-.usericon div.sub_menu a {margin:0;padding:2px;}
-.usericon div.sub_menu a:link, 
-.usericon div.sub_menu a:visited, 
-.usericon div.sub_menu a:hover{ display:block;}	
-.usericon div.sub_menu a:hover{ background:#cccccc; text-decoration:none;}
-
-.usericon div.sub_menu h3 {
-	font-size:1.2em;
-	padding-bottom:3px;
-	border-bottom:solid 1px #dddddd;
-	color: #4690d6;
-	margin:0 !important;
-}
-.usericon div.sub_menu h3:hover {
-
-}
-
-.user_menu_addfriend,
-.user_menu_removefriend,
-.user_menu_profile,
-.user_menu_friends,
-.user_menu_friends_of,
-.user_menu_blog,
-.user_menu_file,
-.user_menu_messages,
-.user_menu_admin,
-.user_menu_pages {
-	margin:0;
-	padding:0;
-}
-.user_menu_admin {
-	border-top:solid 1px #dddddd;
-}
-.user_menu_admin a {
-	color:red;
-}
-.user_menu_admin a:hover {
-	color:white !important;
-	background:red !important;
-}
-
-.resetdefaultprofile {
-	padding:0 10px 0 10px;
-}
-.resetdefaultprofile input[type="submit"] {
-	background: #dedede;
-	border-color: #dedede;
-	color:#333333;
-}
-.resetdefaultprofile input[type="submit"]:hover {
-	background: red;
-	border-color: red;
-	color:white;
-}
-
-/* Banned user */
-#profile_banned {
-	background-color:#FF8888;
-	border:3px solid #FF0000;
-	padding:2px;
-}
-.profile_banned {
-	border:2px solid #FF6666;
-	opacity:.5;
-}
-#logbrowserSearchform {
-	padding: 10px;
-	background-color: #dedede;
-	-webkit-border-radius: 8px; 
-	-moz-border-radius: 8px;
-}
-
-.log_entry {
-	width: 699px;
-	font-size: 80%;
-	background:white;
-	margin:0 10px 5px 10px;
-	-webkit-border-radius: 4px; 
-	-moz-border-radius: 4px;
-	border:1px solid white;
-}
-.log_entry td {
-}
-
-.log_entry_user {
-	width: 120px;
-}
-
-.log_entry_time {
-	width: 210px;
-	padding:2px;
-}
-
-.log_entry_item {
-	
-}
-
-.log_entry_action {
-	width: 75px;
-}.uvbe_bulk_actions {
-	padding: 0 5px;
-}
-
-.uvbe_bulk_controls {
-	float: right;
-}
-
-.uvbe_admin_controls {
-	float: right;
-}
-
-.uvbe_unvalidated_user_details {
-	margin-left: 15px;
-	font-size: smaller;
-}
-
-.uvbe_unvalided_user {
-	border: 1px solid gray;
-	padding: 5px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	margin-bottom: 1em;
-}.searchtype {
-background: #FFFACD;
-color: black;
-}
-
-.searchtypes {
-border: 1px #EEEEEE solid;
-padding: 4px;
-margin: 6px;
-}
-
-.searchListing {
-	display: block;
-	margin-bottom: 2em;
-}
-
-.searchMatch {
-	background-color: #FFFF66;
-}
-
-.searchMatchColor1 {
-	background-color: #FFFF66;
-}
-
-.searchMatchColor2 {
-	background-color: #A0FFFF;
-}
-
-.searchMatchColor3 {
-	background-color: #FF9999;
-}
-
-.searchMatchColor4 {
-	background-color: #FF66FF;
-}
-
-.searchMatchColor5 {
-	background-color: #99FF99;
-}
-
-.searchTitle {
-	text-decoration: underline;
-}
-
-#searchform input.search_input {
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	background-color:#FFFFFF;
-	border:1px solid #BBBBBB;
-	color:#999999;
-	font-size:12px;
-	font-weight:bold;
-	margin:0pt;
-	padding:2px;
-	width:180px;
-	height:12px;
-}
-#searchform input.search_submit_button {
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	color:#333333;
-	background: #cccccc;
-	border:none;
-	font-size:12px;
-	font-weight:bold;
-	margin:0px;
-	padding:2px;
-	width:auto;
-	height:18px;
-	cursor:pointer;
-}
-#searchform input.search_submit_button:hover {
-	color:#ffffff;
-	background: #4690d6;
-}
-
-
-.search_listing {
-	display: block;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	background:white;
-	margin:0 10px 5px 10px;
-	padding:5px;
-}
-
-.entity_gallery_item .search_listing {
-	background: none;
-	text-align: center;
-}
-
-/* override the entity container piece */
-.search_listing .search_listing {
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	background: transparent;
-	margin: 0;
-	padding: 0;
-}
-
-/* formatting for the search results */
-
-.search_listing .item_timestamp {
-	font-style: italic;
 }

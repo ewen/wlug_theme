@@ -16,13 +16,11 @@
 <div class="clearfloat"></div>
 
 <div id="layout_footer">
-	<p class="footer_legal_links">
-		Powered by Elgg, the leading open source social networking platform
-	</p>
-	<p class="footer_toolbar_links">
 	<?php
 		echo elgg_view('footer/links');
 	?>
+	<p class="footer_legal_links">
+		Powered by Elgg, the leading open source social networking platform
 	</p>
 	<p class="footer_powered_by_links">
 		<a href="http://www.elgg.org" target="_blank">
