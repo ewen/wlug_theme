@@ -198,6 +198,7 @@ blockquote p {
 	background-repeat:repeat-y;
 	background-color:#7EB4C1;
 	height:93px;
+	border-bottom:2px solid black;
 }
 #wrapper_header {
 	margin:0;
